@@ -18,7 +18,6 @@ import java.io.IOException;
  * Goal which touches a timestamp file.
  */
 @Mojo( name = "countTargets", defaultPhase = LifecyclePhase.PROCESS_SOURCES, requiresDependencyResolution = ResolutionScope.TEST )
-
 // without this, even fixing the ReactorReader doesn't make a difference, because it checks that there's a compile phase in the build before allowing this workaround
 @Execute(phase = LifecyclePhase.PROCESS_TEST_CLASSES)
 public class MyMojo
